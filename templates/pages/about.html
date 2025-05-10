@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+    About Me
+{% endblock title %}
+
+{% block content %}
+<section class="about-container center-row">
+    <div class="img-container">  
+      <img src="{% static './img/Casualpfpcircle.jpg' %}" alt="">
+    </div>
+    <div>
+      <div class="description-container">
+        <h1 class="role_title">Hello! I'm Derrick!</h1>
+        <h2 class="subtitles">Full Stack Developer</h2>
+        <p class="myinfo">Hi, I'm Derrick—a web developer passionate about crafting seamless, responsive user experiences. From Django-powered backends to polished front-end interfaces, I love building intuitive, functional designs that bridge creativity and logic. I thrive on solving complex technical challenges, whether refining role-based permissions in Django or experimenting with UI/UX workflows in Figma. Always learning, always iterating—let’s build something great together.</p>
+      </div>
+      <section class="skill-section">
+        <h2 class="subtitles">My Skills</h2>
+        <div class="skills">
+          <p class="text-label">Figma</p>
+          <p class="text-label">Django</p>
+          <p class="text-label">Flask</p>
+          <p class="text-label">React</p>
+          <p class="text-label">CSS</p>
+          <p class="text-label">HTML</p>
+          <p class="text-label">SQL</p>
+          <p class="text-label">Python</p>
+          <p class="text-label">VSCode</p>
+          <p class="text-label">Microsoft Paint</p>
+        </div>
+      </section>
+    </div>
+  </section>
+{% endblock content %}

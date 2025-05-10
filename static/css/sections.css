@@ -1,0 +1,97 @@
+/* Main About Section */
+img {
+    width: 100%;
+    height: 100%;
+}
+
+h2 {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+}
+
+.img-container {
+    display: flex;
+    align-items: center;
+    margin-right: 1rem;
+}
+
+.role_title {
+    display: flex;
+    justify-content: center;
+    font-size: 4rem;
+}
+
+.about-container {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1.5rem;
+}
+
+
+/* Skills Section */
+.skill-section {
+    margin-top: 2rem;
+}
+
+.skills {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+    gap: .5rem;
+}
+
+/* Projects Section */
+
+.projects-section {
+    margin-top: 8rem;
+}
+
+.projects-list {
+    flex-wrap: wrap;
+    width: 80%;
+    gap: 4rem;
+    margin-top: 2rem;
+    align-items: flex-start;
+}
+
+.pcard {
+    width: 25rem;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 1rem;
+    padding: .2rem;
+    border: solid 1px var(--secondary-color);
+}
+
+.pcard:hover {
+    border-bottom: solid .2rem black;
+    box-shadow: 2px 2px 2px #0a0a0a !important;
+    background-color: #4a5a5a !important;
+    color: var(--primary-color) !important;
+}
+
+
+.pcard img {
+    width: 100%;
+    height: 15rem;
+    border-radius: 1rem;
+    object-fit: cover;
+    object-position: top 100%;
+}
+
+.pskills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: .5rem;
+    gap: .2rem;
+}
+
+.card-title {
+    font-size: 1.1rem;
+    font-weight: bold;
+}

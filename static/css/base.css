@@ -1,0 +1,73 @@
+/* root */
+:root{
+    --orbitron-font: "Orbitron", sans-serif;
+    --electrolize-font:"Electrolize", sans-serif;
+
+    --primary-color: #FFD700;
+    --secondary-color: #4a5a5a;
+    --background-color: #fff7cc;
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+html {
+    font-family: var(--electrolize-font);
+    background-color: var(--background-color);
+    font-size: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+/* Body */
+body {
+    font-family: var(--electrolize-font);
+    background-color: var(--background-color);
+}
+
+h1{
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.7rem;
+    color: #171C1C;
+    font-family: var(--orbitron-font);
+}
+
+p {
+    font-size: 1rem;
+}
+
+.subtitles {
+    font-family: var(--orbitron-font);
+}
+
+.text-label {
+    color: #FFFFFF;
+    background-color: #998200;
+    border: 1px solid #998200;
+    border-radius: 25px;
+    padding: 0.5rem 1.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 1.1rem;
+}
+
+.center-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.center-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}

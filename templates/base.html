@@ -1,0 +1,45 @@
+{% load static %}
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Electrolize&family=Orbitron:wght@400..900&family=Oxanium:wght@200..800&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'css/base.css' %}">
+    <link rel="stylesheet" href="{% static 'css/header.css' %}">
+    <link rel="stylesheet" href="{% static 'css/sections.css' %}">
+    <link rel="stylesheet" href="{% static 'css/responsive.css' %}">
+    <title> {% block title %} {% endblock title %}</title>
+
+</head>
+<body>
+    <header>
+        <div class="nav-left-side center-row">
+          <a href="{% url 'home' %}">
+            <h2>Derrick</h2>
+          </a>
+        </div>
+  
+        <nav class="nav-right-side center-row">
+          <!-- Hamburger button -->
+          <input type="checkbox" id="nav-burger">
+          <label for="nav-burger" class="hamburger">&#9776;</label>
+          <div class="nav-options center-row">
+            <a href="{% url 'about' %}">About Me</a>  
+            <a href="{% url 'list' %}">Project</a>
+            <a href="{% url 'experience' %}">Experience</a>
+            <a href="">Contact</a>
+          </div>
+  
+        </nav>
+      </header>
+
+    {% block content %}
+
+    {% endblock content %}
+</body>
+</html>
