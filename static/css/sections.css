@@ -69,7 +69,6 @@ h2 {
 
 .pcard:hover {
     border-bottom: solid .2rem black;
-    box-shadow: 2px 2px 2px #0a0a0a !important;
     background-color: #4a5a5a !important;
     color: var(--primary-color) !important;
 }
@@ -94,4 +93,41 @@ h2 {
 .card-title {
     font-size: 1.1rem;
     font-weight: bold;
+}
+
+/* Contact Section */
+
+#contactForm {
+    margin-top: 3rem;
+    border: solid 1px var(--secondary-color);
+    border-radius: 3px;
+    padding: 1rem;
+}
+#contactForm input, textarea{
+    width: 95%;
+    margin-top: .5rem;
+}
+
+.form-btns {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 1rem;
+}
+
+.form-btns button{
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    padding: 5px;
+    border: solid 1px var(--primary-color);
+    border-radius: 5px;
+}
+
+.form-btns button:hover{
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    border: solid 1px var(--secondary-color);
+    box-shadow: 2px 2px 2px #0a0a0a !important;
+    font-weight: bold;
+    text-transform: uppercase;
 }

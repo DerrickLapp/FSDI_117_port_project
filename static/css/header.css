@@ -19,7 +19,7 @@ header {
 .nav-right-side {
     width: 70%;
 }
-.nav-right-side input, label {
+.nav-right-side input, .hamburger{
     display: none;
 }
 
