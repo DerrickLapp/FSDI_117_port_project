@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+{% block title %}New Project{% endblock title %}
+
+{% block content %}
+
+<section class="new_project_section center-column">
+
+    <h2 class="subtitles">Add a New Project</h2>
+
+    <!-- Form will go here -->
+    <form method="post" id="projectForm" enctype="multipart/form-data">
+    {% csrf_token %}
+    {{ form }}
+    <div class="userBtns">
+        <button type="submit">Submit!</button>
+        <button type="reset">Clear Form</button>
+        <a href="{% url 'list' %}">Go Back</a>
+    </div>
+    </form>
+
+</section>
+
+{% endblock content %}

@@ -8,6 +8,11 @@
 {% block content %}
 <section class="projects-section center-column">
     <h2 class="subtitles">Projects</h2>
+    <div class="userBtns">
+      {% if user.is_authenticated and user.is_superuser %}
+      <a href="{% url 'newproject' %}">Add new Project</a>
+      {% endif %}
+    </div> 
     <div class="projects-list center-row">
 
     {% for project in projects %}
@@ -22,7 +27,7 @@
           
           <div class="pskills">
             {% for skill in project.skills.all %}
-            <label class="text-label">{{skill.name }}</label>
+            <label class="text-label">{{ skill.name }}</label>
             {% endfor %}
           </div>
         </a>

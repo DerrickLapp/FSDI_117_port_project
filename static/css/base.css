@@ -34,7 +34,7 @@ h1{
     font-size: 2rem;
 }
 
-h2 {
+h2, label {
     font-size: 1.7rem;
     color: #171C1C;
     font-family: var(--orbitron-font);
